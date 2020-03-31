@@ -2,7 +2,6 @@ package pl.skaler12.spring_mvc_jpa_security.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 import pl.skaler12.spring_mvc_jpa_security.domain.Student;
 import pl.skaler12.spring_mvc_jpa_security.domain.repository.StudentRepository;
