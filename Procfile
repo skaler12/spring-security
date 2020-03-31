@@ -1,1 +1,1 @@
-web: java -jar target/myapp-1.0.0.jar
+web: java -jar run/spring_mvc_jpa_security.jar

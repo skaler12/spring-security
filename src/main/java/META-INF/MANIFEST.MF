@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: pl.skaler12.spring_mvc_jpa_security.SpringMvcJpaSecurityAppl
+ ication
+
