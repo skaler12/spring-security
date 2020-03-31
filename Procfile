@@ -1,1 +1,1 @@
-web: java -jar run/spring_mvc_jpa_security.jar
+web: java -jar target/spring_mvc_jpa_security.jar
