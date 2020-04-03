@@ -9,36 +9,45 @@
     <script th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
 </head>
-<body>
+<body style="font-family: 'Baloo 2', cursive;background-color:#FFF5EE; color: black">
 <div id="container">
-  <div id="time">
-   Aktualny czas <span th:text="${timeComponent.time}"/>
+  <div id="time" style="padding: 20px";>
+   Aktualny czas: <span th:text="${timeComponent.time}"/>
   </div>
     </br>
 
     <table class="table">
         <thead>
         <tr>
-            <td>Imie Studenta</td>
-            <td>Wiek</td>
+            <td style="font-weight: bold">Imie Studenta</td>
+            <td style="font-weight: bold">Wiek</td>
         </tr>
         </thead>
-        <tbody>
+        <tbody style="height: 200px;">
         <tr th:each=" Student : ${allStudents}">
-            <td th:text="${Student.wiek}"></td>
             <td th:text="${Student.imie}"></td>
+            <td th:text="${Student.wiek}"></td>
             <td><a th:href="${'/student?id='+Student.id}">Podglad</a></td>
             <td><a th:href="${'/student/delete/'+Student.id}">Delete</a></td>
 
         </tr>
         </tbody>
     </table>
-    <a href="addStudent">ADD STUDENT</a>
 
-    <div class="row">
+    <a style="padding: 20px" href="addStudent">ADD STUDENT</a>
+
+    <div class="row" style="padding: 20px;">
         <form action="#" th:action="@{/logout}" method="post">
-            <input type="submit" value="Logout">
+            <input style="size: 50px; margin-left: 20px; height: 50px; width: 100px;" type="submit" value="Logout">
         </form>
+    </div>
+    <div style="height: 200px;"></div>
+    <div id = "footer" style="text-align: center">
+        Spring Security CRUD App. Page on the web from 2020. &copy; All rights reserved.
+        <br/>
+        Created by Skaler12
+        <br>
+        <a href="https://github.com/skaler12">Git Hub Profile ! </a>
     </div>
 </div>
 </body>

@@ -9,16 +9,25 @@
     <script th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
 </head>
-<body>
-<div class="container">
+<body style="font-family: 'Baloo 2', cursive;background-color:#FFF5EE; color: black">
+<div style="height: 200px;"></div>
+<div class="container" style="text-align: center">
 
-    Aktualny czas <span th:text="${timecomponent.time}"/>
+    Aktualny czas <span style="padding: 20px;" th:text="${timecomponent.time}"/><br>
 
-    <p th:text="${student.imie}"></p>
-    <p th:text="${student.wiek}"></p>
+    <p style="font-weight: bold; font-size: x-large" th:text="${student.imie}"></p>
+    <p style="font-weight: bold; font-size: x-large" th:text="${student.wiek}"></p>
 
-    <a href="students">STUDENT LIST</a>
+    <a style="margin-top: 30px" href="students">GO BACK TO STUDENTS LIST</a>
 
+    <div style="height: 300px;"></div>
+    <div id = "footer" style="text-align: center">
+        Spring Security CRUD App. Page on the web from 2020. &copy; All rights reserved.
+        <br/>
+        Created by Skaler12
+        <br>
+        <a href="https://github.com/skaler12">Git Hub Profile ! </a>
+    </div>
 </div>
 </body>
 </html>

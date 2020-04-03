@@ -8,8 +8,8 @@
     <script th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
 </head>
-<body>
-<div id="container">
+<body style="font-family: 'Baloo 2', cursive;background-color:#FFF5EE; color: black">
+<div id="container" style="padding: 20px">
     <form class="form-horizontal" th:object="${student}" th:action="@{/students}" th:method="post">
         <div class="form-group">
             <label class="control-label">Imie:</label>
@@ -25,6 +25,14 @@
             <button type="submit" class="btn btn-default">Utworz Studenta</button>
         </div>
     </form>
+    <div style="height: 250px;"></div>
+    <div id = "footer" style="text-align: center">
+        Spring Security CRUD App. Page on the web from 2020. &copy; All rights reserved.
+        <br/>
+        Created by Skaler12
+        <br>
+        <a href="https://github.com/skaler12">Git Hub Profile ! </a>
+    </div>
 </div>
 </body>
 </html>
