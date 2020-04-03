@@ -32,9 +32,9 @@ public class securityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public void securityUsers(AuthenticationManagerBuilder auth )throws Exception{
         auth.inMemoryAuthentication()
-                .withUser("user1").password("{noop}user1").roles("USER")
+                .withUser("user").password("{noop}user").roles("USER")
                 .and()
-                .withUser("user2").password("{noop}user2").roles("ADMIN");
+                .withUser("admin").password("{noop}admin").roles("ADMIN");
     }
 
 }
