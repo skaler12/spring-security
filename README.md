@@ -14,7 +14,7 @@ It's Spring Security !
 ![Start](https://user-images.githubusercontent.com/57706581/78356313-9c495680-75af-11ea-8228-f7ce7be258d4.PNG)
 5.Click Add Student
 ![form](https://user-images.githubusercontent.com/57706581/78356321-9eabb080-75af-11ea-83c0-1cd6f2a0077e.PNG)
-6.Click delete and add Student on user Account. 
+6.Click delete and add Student on user Account. - 403 Error
 ![403](https://user-images.githubusercontent.com/57706581/78356330-a10e0a80-75af-11ea-9027-8bf95d8e80f1.PNG)
 7. Moreover if you want use H2 DB, change profile in application.properties file from dev to prod. 
-# CHEC IT OUT! 
+# CHECK IT OUT! 
